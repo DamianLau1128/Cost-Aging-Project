@@ -1,15 +1,14 @@
-#R SCRIPT: Reproduction-Longevity Trade-off Analysis
 # Research Question: How does reproduction affect longevity?
 # 1. LOAD REQUIRED PACKAGES
 library(readxl)
-library(ggplot2)
-library(dplyr)
+library(ggplot2) #for data visualisation
+library(dplyr) #for data manipulation
 library(sjPlot)
 library(ggpubr)
 library(lme4)
 library(lmerTest) #LMM Model
 library(ggplot2)
-library(tidyverse) # includes ggplot2, for data visualisation. dplyr, for data manipulation.
+library(tidyverse)
 library(survival)
 library(survminer)
 library(ggsurvfit)
@@ -732,6 +731,3 @@ cat("Females - With Late Eclosion Time: AIC =", AIC(gompertz_f_with_eclosion_2),
 cat("Males - No Eclosion: AIC =", AIC(gompertz_m), "\n")
 cat("Males - with Early Eclosion Time: AIC =", AIC(gompertz_m_with_eclosion_1), "\n")
 cat("Males - with Early Eclosion Time: AIC =", AIC(gompertz_m_with_eclosion_2), "\n")
-
-
-
